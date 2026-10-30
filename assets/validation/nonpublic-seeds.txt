@@ -1,0 +1,31 @@
+100/1693 nonpublic seeds: all six phases and Honor passed; 2.9s
+200/1693 nonpublic seeds: all six phases and Honor passed; 5.2s
+300/1693 nonpublic seeds: all six phases and Honor passed; 7.9s
+400/1693 nonpublic seeds: all six phases and Honor passed; 10.5s
+500/1693 nonpublic seeds: all six phases and Honor passed; 13.0s
+600/1693 nonpublic seeds: all six phases and Honor passed; 15.5s
+700/1693 nonpublic seeds: all six phases and Honor passed; 18.0s
+800/1693 nonpublic seeds: all six phases and Honor passed; 20.7s
+900/1693 nonpublic seeds: all six phases and Honor passed; 23.4s
+1000/1693 nonpublic seeds: all six phases and Honor passed; 25.7s
+1100/1693 nonpublic seeds: all six phases and Honor passed; 28.2s
+1200/1693 nonpublic seeds: all six phases and Honor passed; 30.8s
+1300/1693 nonpublic seeds: all six phases and Honor passed; 33.4s
+1400/1693 nonpublic seeds: all six phases and Honor passed; 35.7s
+1500/1693 nonpublic seeds: all six phases and Honor passed; 38.2s
+1600/1693 nonpublic seeds: all six phases and Honor passed; 41.0s
+{
+  "nonpublic_seeds": 1693,
+  "passed": 1693,
+  "coverage": {
+    "phase3": 8,
+    "phase4": 128,
+    "phase5": 32,
+    "phase6": 64
+  },
+  "seed_20261014": "All six phases and Honor passed",
+  "seed_set_sha256": "35bd903f26724358d46f611952b6a72c0d26569169afbe4d4ec04c85a9c7068d",
+  "bomb_sha256": "2381c1251b2f02b1f7b83a2fd016ad9e24efdce95056e5365c43ff8e80223850",
+  "defuser_source_sha256": "c50709a52bcc331cfd1d24d8223fb0454d973189d010cc4d71db102abe5d0606",
+  "seconds": 43.4
+}

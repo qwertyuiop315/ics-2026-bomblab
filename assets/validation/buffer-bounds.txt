@@ -1,0 +1,1 @@
+PASS: 143920 buffer-boundary cases, cap 0..256, all 7 solvers; ASan/UBSan clean.

@@ -5,10 +5,6 @@
 
 #define MAX_FIELDS 8
 
-/*
- * 把 values 中的 count 个整数写成一行“空格分隔的无符号十进制整数”，存入 out。
- * 成功返回 0；count 为 0（还没有实现）、snprintf 出错或结果被截断时返回非零。
- */
 static int write_answer(char *out, size_t cap, const uint32_t *values, size_t count) {
     size_t used = 0;
     for (size_t i = 0; i < count; ++i) {
@@ -78,7 +74,6 @@ int solve_phase_4(uint64_t challenge, char *out, size_t cap) {
 }
 
 int solve_phase_5(uint64_t challenge, char *out, size_t cap) {
-    /* 原节点的 next 指针用表内下标表示，数值和 tag 保持不变。 */
     static const struct {
         unsigned next;
         uint32_t value;
@@ -139,7 +134,6 @@ int solve_secret(uint64_t challenge, uint64_t context, char *out, size_t cap) {
     uint32_t middle = ((x >> 3) | (x << 29)) ^ 0xed8fu;
     middle ^= kind * 0x5d59u ^ (uint32_t)(context >> 16);
     uint32_t last = middle ^ (b + kind + 0xb0d6u + (a >> 3));
-    /* scratch 占 32 字节，后面依次是 OPEN 标记和三个整数。 */
     int size = snprintf(out, cap, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOPEN%" PRIu32
                         " %" PRIu32 " %" PRIu32, kind, middle, last);
     return size < 0 || (size_t)size >= cap;
