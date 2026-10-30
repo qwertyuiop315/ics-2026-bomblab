@@ -271,3 +271,13 @@ ASAN_OPTIONS=detect_leaks=1 UBSAN_OPTIONS=halt_on_error=1 \
 ```
 
 辅助工具使用情况：objdump 用于导出汇编，GDB 用于读取程序状态与静态表；Codex 用于辅助分析汇编及整理报告。报告中的寄存器，内存值和验证结果均来自实际运行
+
+### 参考资料
+
+1. [ICS-26Fall-FDU. Lab2：BombLab 实验说明.](https://ics-26fall-fdu.github.io/labs/lab2-bomb-lab/)
+
+2. [ICS-26Fall-FDU. BombLab 模板仓库 README.](https://github.com/ICS-26Fall-FDU/BombLab/blob/main/README.md)
+
+3. [GNU Project. Debugging with GDB.](https://sourceware.org/gdb/current/onlinedocs/gdb.html/)
+
+4. [GNU Project. GNU Binary Utilities: objdump.](https://sourceware.org/binutils/docs/binutils/objdump.html)
